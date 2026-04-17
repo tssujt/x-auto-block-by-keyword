@@ -1,0 +1,21 @@
+{
+  "name": "x-auto-block-by-keyword",
+  "version": "0.1.0",
+  "private": true,
+  "author": "tssujt <github@tssujt.xyz>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm exec tsx scripts/build.ts",
+    "typecheck": "pnpm exec tsc --project tsconfig.json --noEmit",
+    "lint": "pnpm run typecheck",
+    "test": "node --import tsx --test tests/**/*.test.ts",
+    "validate": "pnpm run typecheck && pnpm run test && pnpm run build"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.29",
+    "@types/node": "^24.6.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

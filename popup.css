@@ -1,0 +1,73 @@
+:root {
+  color-scheme: light;
+  --bg: #f7f3eb;
+  --panel: #fffdf8;
+  --ink: #1d1b18;
+  --muted: #6a6258;
+  --accent: #b1421b;
+  --accent-strong: #8e2d0c;
+  --line: #e5d9ca;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font: 14px/1.4 "Avenir Next", "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #fff7e6, var(--bg));
+  color: var(--ink);
+}
+
+.panel {
+  padding: 16px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.summary,
+.status {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+}
+
+.summary {
+  padding: 10px 12px;
+}
+
+.toggle {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 14px 0;
+}
+
+.actions {
+  display: grid;
+  gap: 10px;
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 14px;
+  font: inherit;
+  cursor: pointer;
+  background: var(--accent);
+  color: #fff;
+}
+
+button.secondary {
+  background: #eadbc6;
+  color: var(--ink);
+}
+
+.status {
+  margin-top: 14px;
+  padding: 10px 12px;
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Auto Block By Keyword Settings</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <main class="layout">
+      <section class="card">
+        <p class="eyebrow">Keyword list</p>
+        <h1>Manage reply filters</h1>
+        <p class="copy">Use commas or new lines. Matching is case-insensitive.</p>
+        <textarea id="keywordInput" rows="12" placeholder="spam&#10;bot&#10;promo code"></textarea>
+        <div class="row">
+          <label class="toggle">
+            <input id="autoBlock" type="checkbox">
+            <span>Enable auto-block after matches are found</span>
+          </label>
+        </div>
+        <div class="row">
+          <button id="saveButton" type="button">Save settings</button>
+          <span id="saveStatus" class="save-status"></span>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="options.js"></script>
+  </body>
+</html>

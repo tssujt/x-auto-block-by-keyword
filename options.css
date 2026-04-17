@@ -1,0 +1,89 @@
+:root {
+  --bg: #f3efe8;
+  --card: #fffdf8;
+  --ink: #181511;
+  --muted: #655c52;
+  --accent: #1a6a59;
+  --line: #ddd2c2;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font: 16px/1.5 "Iowan Old Style", Georgia, serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top right, #fce6cd, transparent 30%),
+    linear-gradient(180deg, #f7f3ec, var(--bg));
+}
+
+.layout {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 48px 20px;
+}
+
+.card {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--card);
+  box-shadow: 0 20px 45px rgba(51, 35, 12, 0.08);
+}
+
+.eyebrow {
+  margin: 0;
+  font: 600 12px/1 "Avenir Next", "Segoe UI", sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h1 {
+  margin: 12px 0 8px;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+.copy {
+  margin: 0 0 18px;
+  color: var(--muted);
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  font: 15px/1.5 "SF Mono", "Menlo", monospace;
+  resize: vertical;
+  background: #fffefb;
+}
+
+.row {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.toggle {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font: 600 14px/1 "Avenir Next", "Segoe UI", sans-serif;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+.save-status {
+  color: var(--muted);
+}

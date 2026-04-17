@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Auto Block By Keyword</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="panel">
+      <section>
+        <p class="eyebrow">Current filter</p>
+        <div id="keywordSummary" class="summary">No keywords configured</div>
+      </section>
+
+      <label class="toggle">
+        <input id="autoBlock" type="checkbox">
+        <span>Auto-block matching replies</span>
+      </label>
+
+      <div class="actions">
+        <button id="scanButton" type="button">Scan current tweet</button>
+        <button id="optionsButton" type="button" class="secondary">Edit keywords</button>
+      </div>
+
+      <section class="status">
+        <p class="eyebrow">Status</p>
+        <div id="statusText">Ready.</div>
+      </section>
+    </main>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
