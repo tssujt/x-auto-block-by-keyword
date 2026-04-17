@@ -16,6 +16,6 @@
     "@types/chrome": "^0.1.29",
     "@types/node": "^25.6.0",
     "tsx": "^4.20.6",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.3"
   }
 }
